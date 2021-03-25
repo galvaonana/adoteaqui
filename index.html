@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 
+        <link rel="stylesheet" media= "max-width: 800px "href="styles.css">
+        a configuração de todo o doc era limitada ao que o "max-width" dizia
+    -->
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Separe por hierarquia as suas informações; a partir dai, separe em categorias-->
+    <div class="topbar">
+        <!--Colocar todo mundo dentro de uma DIV apenas; a DIV da barra-->
+        <div class="title-div">
+            <h1 class="title"> Adote aqui!</h1>
+            <!--A font family é herdada pelo h1 na ausência de outro "font family"-->
+        </div>
+        <div class="link-group">
+            <h1 class="links">Home</h1>
+            <!--Filho do Link Group-->
+            <h1 class="links">Sobre</h1>
+            <h1 class="links">Contato</h1>
+        </div>
+        <!--Ambas as DIV são elementos filhos da TOPBAR, pois, na identação, ambas ficam dentro dessa "gavetinha"-->
+    </div>
+</body>
+
+</html>
+
+<!--As heranças "cascateiam", ou seja, herdam de um elemento que vem primeiro (no caso o topbar)
+Porem, quando aplicamos nos elementos uma configuração, essa se sobrepõe a do primeiro elementão-->
